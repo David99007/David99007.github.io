@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.sidebar{
+	position:fixed;
+	top:0;
+	left:0;
+	height:100%;
+	width:240px;
+	background:#fff;
+}
+
+.sidebar logo-details{
+	height:64px;
+	width:100%;
+	display:flex;
+	align-items:center;
+}
+
+.sidebar img{
+	min-width:64px;
+	max-width:240px;
+	padding:12px;
+}
+
+.sidebar .nav-links{
+	height:100%;
+	padding:30px 0 150px 0;
+	overflow:auto;
+}
+
+.sidebar .nav-links::-webkit-scrollbar{
+	display:none;
+}
+
+.sidebar .nav-links li{
+	position:relative;
+	list-style:none;
+	transition:all 0.4s ease;
+}
+
+.sidebar .nav-links li:hover{
+	background:#D8EAFD;
+}
+
+.sidebar .nav-links li i{
+	height:50px;
+	min-width:64px;
+	text-align:center;
+	line-height:50px;
+	color:#11101d;
+	font-size:20px;
+	transition:all 0.4s ease;
+}
+
+.sidebar .nav-links li.showMenu i.arrow{
+	transform:rotate(-180deg);
+}
+
+.sidebar .nav-links li a{
+	display:flex;
+	align-items:center;
+	text-decoration:none;
+}
+
+.sidebar .nav-links li a .link-name{
+	font-size:16px;
+	font-weight:400;
+	color:#11101d;
+}
+
+.sidebar .nav-links li .icon-link{
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+}
+
+.sidebar .nav-links li .sub-menu{
+	padding:6px 6px 12px 60px;
+	margin-top:-10px;
+	background:#1d1b31;
+	display:none;
+}
+
+.sidebar .nav-links li.showMenu .sub-menu{
+	display:block;
+}
+
+.sidebar .nav-links li .sub-menu a{
+	color:#fff;
+	font-size:12px;
+	padding:5px;
+	white-space:nowrap;
+	opacity:0.6;
+	transition: all 0.4s ease;
+}
+
+.sidebar .nav-links li .sub-menu a:hover{
+	opacity:1;
+}
+
+.sidebar .nav-links li .sub-menu.blank{
+	opacity:1;
+	pointer-events:none;
+	padding: 3px 20px 6px 16px;
+}
+.sidebar .nav-links li .sub-menu .link-name{
+	display:none;
+}
+.sidebar .profile-details{
+	position:fixed;
+	bottom:0;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	background:#fff;
+	padding:6px 0;
+	max-width:240px;
+	min-width:240px;
+	border-top:3px solid #D8EAFD;
+}
+
+.sidebar .profile-details .profile-content{
+	display:flex;
+	align-items:center;
+}
+
+.sidebar .profile-details img{
+	height:64px;
+	width:64px;
+	object-fit:cover;
+	border-radius:16px;
+	margin: 0 0 0 0;
+	padding:10px;
+}
+
+.sidebar .profile-details .profile-name,
+.sidebar .profile-details .profile-status{
+	color:#11101d;
+	font-size:11px;
+	font-weight:500;
+}

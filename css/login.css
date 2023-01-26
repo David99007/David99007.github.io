@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body{
+	display:flex;
+	height:100vh;
+	justify-content:center;
+	align-items:center;
+	padding:12px;
+}
+
+.title img{
+	min-height:80px;
+	max-height:160px;
+}
+
+.container{
+	max-width:1020px;
+	min-height:380px;
+	max-height:640px;
+	width:640px;
+	background:#fff;
+	padding:24px 36px;
+}
+
+.container .title{
+	text-align:center;
+	position:relative;
+}
+
+.container .title h1{
+	font-size:48px;
+	font-weight:700;
+	color:rgb(65,80,100);
+}
+
+.container form .instance-details{
+	display:block;
+	margin:20px 0 12px 0;
+}
+
+form .instance-details .input-box{
+	margin-bottom:16px;
+}
+
+.instance-details .input-box .details{
+	display:block;
+	margin-bottom:8px;
+	font-size:18px;
+	font-weight:500;
+}
+
+.instance-details .input-box input,
+.instance-details .input-box select{
+	height:56px;
+	width:100%;
+	outline:none;
+	border-radius:5px;
+	border:1px solid #ccc;
+	padding-left:8px;
+	padding-right:8px;
+	font-size:18px;
+	border-bottom-width:2px;
+	transition:all 0.4s ease;
+}
+
+.instance-details .input-box input:focus,
+.instance-details .input-box select:focus{
+	border-color: #9b59b6
+}
+
+form .add-data input{
+	height:56px;
+	width:100%;
+	outline:none;
+	color: #fff;
+	border:none;
+	font-size:34px;
+	font-weight:600;
+	letter-spacing:1px;
+	background:rgb(15,120,190);
+	border-radius:5px;
+}
+
+form .add-data input:hover{
+	cursor:pointer;
+}

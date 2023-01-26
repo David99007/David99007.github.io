@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body{
+	display:flex;
+	height:100vh;
+	justify-content:center;
+}
+
+.container{
+	margin-left:240px;
+	min-width:360px;
+	min-height:380px;
+	width:720px;
+	height:960px;
+	background:#fff;
+	padding:24px 36px;
+	border-radius:5px;
+}
+
+.container .request-title{
+	text-align:center;
+	position:relative;
+}
+
+.container .request-title h1{
+	font-size:18px;
+	font-weight:700;
+	color:rgb(140,150,210);
+}
+
+.container .request-title h2{
+	font-weight:600;
+	margin-top:8px;
+	margin-bottom:8px;
+	font-size:14px;
+}
+
+.container form .request-details{
+	display:block;
+	margin:10px 0 10px 0;
+}
+
+form .request-details .input-box{
+	margin-bottom:8px;
+}
+
+.request-details .input-box .details,
+.request-details .upload-data .details{
+	display:block;
+	font-weight:500;
+	margin-bottom:8px;
+	font-size:12px;
+}
+
+.request-details .input-box .description{
+	float:right;
+	font-size:12px;
+	opacity:.5;
+}
+
+.request-details .input-box input,
+.request-details .input-box select{
+	height:36px;
+	width:100%;
+	outline:none;
+	border-radius:5px;
+	border:1px solid #ccc;
+	padding-left:8px;
+	padding-right:8px;
+	font-size:12px;
+	border-bottom-width:2px;
+	transition:all 0.4s ease;
+}
+
+.request-details .input-box textarea{
+	height:64px;
+	width:100%;
+	outline:none;
+	border-radius:5px;
+	border:1px solid #ccc;
+	padding-left:8px;
+	padding-right:8px;
+	font-size:12px;
+	border-bottom-width:2px;
+	transition:all 0.4s ease;
+}
+
+.request-details .input-box input:focus,
+.request-details .input-box select:focus{
+	border-color: #9b59b6
+}
+
+form .upload-data input{
+	margin-bottom:8px;
+	height:36px;
+	width:15%;
+	outline:none;
+	color: rgb(110,110,110);
+	font-size:12px;
+	font-weight:600;
+	letter-spacing:1px;
+	background:rgb(245,245,245);
+	border:solid 3px rgb(235,235,235);
+	border-radius:5px;
+}
+
+form .upload-data input:hover{
+	cursor:pointer;
+}
+
+form .request-data input{
+	height:36px;
+	width:100%;
+	outline:none;
+	color: #fff;
+	border:none;
+	font-size:12px;
+	font-weight:600;
+	letter-spacing:1px;
+	background:rgb(15,120,190);
+	border-radius:5px;
+}
+
+form .request-data input:hover{
+	cursor:pointer;
+}

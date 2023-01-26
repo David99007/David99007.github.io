@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body{
+	display:flex;
+	height:100vh;
+	justify-content:center;
+	align-items:center;
+	padding:12px;
+}
+
+.container{
+	margin-left:240px;
+	min-width:720px;
+	min-height:380px;
+	width:1920px;
+	background:#fff;
+	padding:24px 36px;
+	align-items:center;
+}
+
+.slider-wrapper{
+	position:relative;
+	max-width:720;
+	margin-top:-120px;
+	margin-right:auto;
+	margin-left:auto;
+}
+
+.slider{
+	display:flex;
+	aspect-ratio:16/9;
+	overflow-x:overlay;
+	scroll-snap-type:x mandatory;
+	scroll-behavior:smooth;
+	box-shadow: 0 1.5 rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+}
+
+.slider img{
+	flex:1 0 100%;
+	scroll-snap-align:start;
+	max-width:720;
+}
+
+.slider-nav{
+	display:flex;
+	column-gap:1;
+	position:absolute;
+	bottom:1.25rem;
+	left:50%;
+	transform:translateX(-50%);
+	z-index:1;
+}
+
+.slider-nav a{
+	width:0.5 rem;
+	height:0.5 rem;
+	border-radius:50%;
+}
+
+.slider::-webkit-scrollbar{
+	width: 0.7em;
+	background: white;
+}
+
+.slider::-webkit-scrollbar-thumb {
+	background:#fff;
+	height:30px;
+}
+
+.slider::-webkit-scrollbar-track-piece{
+	display:none;
+}
+
+.program-details{
+	width:45%;
+	margin-top:12px;
+	max-height:280px;
+	float:left;
+	margin-left:120px;
+}
+
+.program-details .program-title h1{
+	font-size:28px;
+	font-weight:700;
+	text-align:center;
+}
+
+.program-details .program-description{
+	margin-top:8px;
+	text-align:justify;
+	font-size:16px;
+}
+
+.target{
+	width:25%;
+	margin-top:40px;
+	max-height:280px;
+	float:right;
+	margin-right:120px;
+}
+
+.back-button{
+	position:absolute;
+	top:90%;
+	left:55%;
+	height:auto;
+	width:auto;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.back-button .button{
+	margin-left:240px;
+	height:36px;
+	width:96px;
+	text-align:center;
+	outline:none;
+	border:1px solid rgb(15,120,190);
+	border-radius:5px;
+	background:rgb(15,120,190);
+	color:#fff;
+	font-size:14px;
+	font-weight:600;
+}
+
+.back-button .button:hover{
+	cursor:pointer;
+}
+
+.download-button{
+	position:absolute;
+	top:90%;
+	left:45%;
+	height:auto;
+	width:auto;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.download-button .button{
+	margin-left:240px;
+	height:36px;
+	width:96px;
+	text-align:center;
+	outline:none;
+	border:1px solid rgb(15,120,190);
+	border-radius:5px;
+	background:rgb(15,120,190);
+	color:#fff;
+	font-size:14px;
+	font-weight:600;
+}
+
+.download-button .button:hover{
+	cursor:pointer;
+}

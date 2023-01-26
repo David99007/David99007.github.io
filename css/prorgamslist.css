@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body{
+	display:flex;
+	height:100vh;
+	justify-content:center;
+	align-items:center;
+	padding:12px;
+}
+
+.container{
+	margin-left:240px;
+	min-width:720px;
+	min-height:380px;
+	width:1920px;
+	background:#fff;
+	padding:24px 36px;
+	align-items:center;
+}
+
+.title{
+	text-align:center;
+	margin-bottom:32px;
+}
+
+.title h1{
+	font-size:24px;
+	font-weight:700;
+}
+
+.search{
+	height:72px;
+	align-items:center;
+	display:block;
+	margin-bottom:8px;
+}
+
+.search .search-bar{
+	margin-left:12px;
+	margin-right:12px;
+	float:left;
+	margin-top:12px;
+}
+
+.search .search-bar input{
+	height:36px;
+	min-width:100%;
+	width:320%;
+	outline:none;
+	padding-left:56px;
+	padding-right:24px;
+	font-size:14px;
+	border:1px solid #ccc;
+	border-radius:5px;
+	border-bottom-width:2px;
+	transition:all 0.4s ease;
+}
+
+.search .search-bar input:focus{
+	border-color: #9b59b6;
+}
+
+.search .search-bar1{
+	position:absolute;
+	margin-left:24px;
+	height:24px;
+	width:24px;
+	border-radius:5px;
+	margin-top:12px;
+	float:left;
+}
+
+.search .search-bar1 .search-icon{
+	color:rgb(155,115,115);
+	margin-top:6px;
+	font-size:22px;
+	float:left;
+}
+
+.search .add-button{
+	text-align:center;
+	align-items:center;
+	padding-top:8px;
+	margin-left:4px;
+	margin-right:12px;
+	height:36px;
+	width:160px;
+	border-radius:5px;
+	background:rgb(15,120,190);
+	color: #fff;
+	margin-top:12px;
+	float:right;
+}
+
+.search .add-button:hover{
+	cursor:pointer;
+}
+
+.search .add-button span{
+	font-size:12px;
+	font-weight:500;
+}
+
+.search .search-button{
+	text-align:center;
+	align-items:center;
+	padding-top:8px;
+	margin-left:12px;
+	margin-right:4px;
+	height:36px;
+	width:120px;
+	border-radius:5px;
+	background:rgb(15,120,190);
+	color: #fff;
+	margin-top:12px;
+	float:right;
+}
+
+
+.search .search-button:hover{
+	cursor:pointer;
+}
+
+.search .search-button span{
+	font-size:12px;
+	font-weight:500;
+}
+
+.table-list{
+	padding-left:12px;
+	padding-right:12px;
+	height:480px;
+	align-items:center;
+	display:block;
+	margin-bottom:32px;
+	overflow:overlay;
+	border-top:1px solid #DDDDDD;
+	border-right:2px solid #D6D6D6;
+	border-left:2px solid #D6D6D6;
+	border-bottom:3px solid #9E9E9E;
+	border-radius:5px;
+	padding:12px;
+}
+
+.table-list::-webkit-scrollbar{
+	width: 0.7em;
+	background: white;
+}
+
+.table-list::-webkit-scrollbar-thumb {
+	background:#fff;
+	height:30px;
+}
+
+.table-list::-webkit-scrollbar-track-piece
+{
+	display:none;
+}
+
+.table-list table{
+	text-align:center;
+	width:100%;
+}
+
+.table-list table th{
+	padding:12px;
+	font-size:14px;
+	font-weight:500;
+}
+
+.table-list table td{
+	padding:12px;
+	font-size:12px;
+	font-weight:400;
+}
+
+.table-list table tr:first-child{
+	color:#fff;
+	background:rgb(150,150,150);
+}
+
+.table-list table tr:first-child:hover{
+	background:rgb(150,150,150);
+}
+
+.back-button{
+	position:absolute;
+	top:95%;
+	left:50%;
+	height:auto;
+	width:auto;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.back-button .button{
+	margin-left:240px;
+	height:36px;
+	width:96px;
+	text-align:center;
+	outline:none;
+	border:1px solid rgb(15,120,190);
+	border-radius:5px;
+	background:rgb(15,120,190);
+	color:#fff;
+	font-size:14px;
+	font-weight:600;
+}
+
+.back-button .button:hover{
+	cursor:pointer;
+}
+
+.table-list table button{
+	background:#fff;
+	border:none;
+	outline:none;
+	font-size:12px;
+	padding:4px 6px 4px 4px;
+	cursor:pointer;
+	display:flex;
+}
+
+.table-list table button:hover{
+	background:#E9E9E9;
+}
+
+.table-list table button span:hover .dropdown{
+	display:block;
+}
+
+.dropdown{
+	background:#fff;
+	position:absolute;
+	width:110px;
+	transform:translateY(-.2em);
+	transition:transform .5s;
+	visibility:hidden;
+}
+
+.dropdown ul{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+
+.dropdown ul li a{
+	display:flex;
+	padding:2px;
+	text-decoration:none;
+	color:black;
+}
+
+.dropdown ul li a:hover{
+	background:#E9E9E9;
+}
+
+.btn-container:hover .dropdown{
+	display:block;
+	visibility:visible;
+	transform:translateY(0);
+}

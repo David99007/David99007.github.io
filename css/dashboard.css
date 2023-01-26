@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body{
+	display:flex;
+	height:100vh;
+	justify-content:center;
+	align-items:center;
+}
+
+.container{
+	margin-left:280px;
+	width:1200px;
+	max-width:1920px;
+	min-height:380px;
+	height:680px;
+	background:#fff;
+}
+
+.image img{
+	width:1280px;
+	max-height:480px;
+	min-width:320px;
+	margin-left:auto;
+	margin-right:auto;
+	display:flex;
+}
+
+.TPB-Pillar{
+	margin-top:12px;
+	margin-left:auto;
+	margin-right:auto;
+	width:95%;
+	height:55%;
+	border-top:1px solid #DDDDDD;
+	border-right:2px solid #D6D6D6;
+	border-left:2px solid #D6D6D6;
+	border-bottom:3px solid #9E9E9E;
+	border-radius:5px;
+}
+
+.TPB-Pillar .title h3{
+	font-size:24px;
+	font-weight:700;
+	text-align:center
+}
+
+.TPB-Pillar .sub-title h5{
+	font-size:14px;
+	font-weight:400;
+	text-align:center
+}
+
+.TPB-Pillar .row1{
+	margin-top:48px;
+	display:flex;
+}
+
+.TPB-Pillar .row1 .column{
+	text-align:center;
+	width:8%;
+	padding:4px;
+	margin-right:auto;
+	margin-left:auto;
+}
+
+.TPB-Pillar .row2{
+	margin-top:36px;
+	display:flex;
+}
+
+.TPB-Pillar .row2 .column{
+	text-align:center;
+	width:8%;
+	padding:4px;
+	margin-right:auto;
+	margin-left:auto;
+}
+
+.TPB-Pillar span{
+	font-size:12px;
+}
+
+.chart{
+	width:95%;
+	height:256px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:24px;
+	border-top:1px solid #DDDDDD;
+	border-right:2px solid #D6D6D6;
+	border-left:2px solid #D6D6D6;
+	border-bottom:3px solid #9E9E9E;
+	border-radius:5px;
+}
+
+.pie-chart{
+	border:1px solid #fff;
+	width:180px;
+	height:180px;
+	margin-left:240px;
+	margin-top:38px;
+	border-radius:50%;
+	background: conic-gradient(#59BA47 64.5%, #0C76BB 35.5%);
+	float:left;
+}
+
+.text-chart{
+	margin-right:240px;
+	font-size:18px;
+	float:right;
+	margin-top:92px;
+}
+
+.tab1{
+	tab-size:9.35;
+}
+.tab2{
+	tab-size:56;
+}
+
+.box1{
+	border:1px solid #59BA47;
+	width:10px;
+	height:10px;
+	background:#59BA47;
+	float:left;
+	margin-top:8px;
+	margin-right:8px;
+}
+
+.box2{
+	border:1px solid #0C76BB;
+	width:10px;
+	height:10px;
+	background:#0C76BB;
+	float:left;
+	margin-top:8px;
+	margin-right:8px;
+}
